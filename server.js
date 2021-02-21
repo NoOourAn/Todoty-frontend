@@ -10,5 +10,4 @@ app.get('/*', function(req, res) {
     res.sendFile('index.html', {root: 'dist/frontend/'});
 });
 
-console.log("nnnnnnnnnnnn")
 app.listen(process.env.PORT || port)
