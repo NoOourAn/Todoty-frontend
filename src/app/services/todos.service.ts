@@ -8,7 +8,7 @@ import { HelperService } from './helper.service'
 export class TodosService {
 
   constructor(private myClient:HttpClient,private helper:HelperService) { }
-  private baseUrl:string = "http://localhost:3000/api/todos";
+  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/todos";
   ////////
   getTodos(){
     const header = this.helper.setHeaders()

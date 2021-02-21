@@ -11,7 +11,7 @@ export class TodoDetailService {
   constructor(private myClient:HttpClient,private helper:HelperService) { }
 
   ////variables
-  private baseUrl:string = "http://localhost:3000/api/todos";
+  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/todos";
   res
 
   private todo = new Subject<object>();

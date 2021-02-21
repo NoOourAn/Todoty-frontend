@@ -8,7 +8,7 @@ import { HelperService } from './helper.service'
 export class GroupsService {
 
   constructor(private myClient:HttpClient,private helper:HelperService) { }
-  private baseUrl:string = "http://localhost:3000/api/groups";
+  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/groups";
   ////////
   getGroups(){
     const header = this.helper.setHeaders()

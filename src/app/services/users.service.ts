@@ -9,7 +9,7 @@ export class UsersService {
 
   constructor(private myClient:HttpClient, private router: Router) { }
 
-  private baseUrl:string = "http://localhost:3000/api/users";
+  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/users";
   addUser(user){
     const url = this.baseUrl + "/register"
     return this.myClient.post(url,user);  ///it returns obsevable i need to subscribe on it to get the response
