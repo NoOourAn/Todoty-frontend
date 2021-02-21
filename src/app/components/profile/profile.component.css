@@ -18,8 +18,9 @@
 }   
 
 .filter-block{
-    padding: 25px;
-    margin-bottom: 20px;
+    padding: 0px 35px;
+    min-height: 100vh;
+    width: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
 button.btn{
