@@ -7,7 +7,7 @@
     font-size: 35px;
 }
 .welcome h1 span{
-    color: #9D0029;
+    color: #ad264a;
     font-size: 50px;
     font-weight: 600;
 }
@@ -19,14 +19,12 @@ hr{
     width: 50%;
 }
 .welcome p span{
-    color: #9D0029;
+    color: #ad264a;
     font-size: 25px;
     font-weight: 500;
 }
 button.btn{
-    background-color: #9D0029;
-    color: #2E2E2E;
-    /* box-shadow: 0px 0px 10px black; */
+    background-color: #ad264a;
     border: none;
     box-shadow: 1px 2px 5px rgba(0,0,0,.3); 
     font-size: 16px;
@@ -35,7 +33,7 @@ button.btn{
     width: 30%;
 }
 button.btn:hover{
-    color: #FE792A;
+    color: #fff;
     background-color: #2E2E2E;
 }
 input[type=text],select{
