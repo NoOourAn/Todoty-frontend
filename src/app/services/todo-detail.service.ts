@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { HelperService } from './helper.service'
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class TodoDetailService {
   constructor(private myClient:HttpClient,private helper:HelperService) { }
 
   ////variables
-  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/todos";
+  private baseUrl:string = `${environment.api}/api/todos`;
   res
 
   private todo = new Subject<object>();

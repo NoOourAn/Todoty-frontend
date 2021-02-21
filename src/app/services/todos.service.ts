@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { HelperService } from './helper.service'
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { HelperService } from './helper.service'
 export class TodosService {
 
   constructor(private myClient:HttpClient,private helper:HelperService) { }
-  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/todos";
+  private baseUrl:string = `${environment.api}/api/todos`;
   ////////
   getTodos(){
     const header = this.helper.setHeaders()

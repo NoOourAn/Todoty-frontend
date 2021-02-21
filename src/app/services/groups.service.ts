@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { HelperService } from './helper.service'
 
 @Injectable({
@@ -8,7 +9,7 @@ import { HelperService } from './helper.service'
 export class GroupsService {
 
   constructor(private myClient:HttpClient,private helper:HelperService) { }
-  private baseUrl:string = "https://todoty-backend.herokuapp.com/api/groups";
+  private baseUrl:string = `${environment.api}/api/groups`;
   ////////
   getGroups(){
     const header = this.helper.setHeaders()
