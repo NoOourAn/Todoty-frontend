@@ -1,0 +1,44 @@
+.card{
+    min-height: 400px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,.3); 
+    margin-top: 140px;
+}
+.welcome h1{
+    font-size: 35px;
+}
+.welcome h1 span{
+    color: #9D0029;
+    font-size: 50px;
+    font-weight: 600;
+}
+.welcome p{
+    font-size: 15px;
+}
+hr{
+    opacity: 0.2;
+    width: 50%;
+}
+.welcome p span{
+    color: #9D0029;
+    font-size: 25px;
+    font-weight: 500;
+}
+button.btn{
+    background-color: #9D0029;
+    color: #2E2E2E;
+    /* box-shadow: 0px 0px 10px black; */
+    border: none;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.3); 
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: 30%;
+}
+button.btn:hover{
+    color: #FE792A;
+    background-color: #2E2E2E;
+}
+input[type=text],select{
+    margin-left: 10px;
+    border-radius: 5px;
+}
