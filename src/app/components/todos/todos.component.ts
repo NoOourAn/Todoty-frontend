@@ -201,8 +201,7 @@ getTodosBack(){
     .subscribe((response)=>{
       this.res = response
       if(this.res.success){
-        // this.groupTodosByGroup();
-        this.updateView();
+        this.groupTodosByGroup();
         this.AddGroupForm.reset();
       }
       else
